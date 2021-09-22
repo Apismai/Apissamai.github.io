@@ -36,6 +36,15 @@ h4 {
     font-weight: 200;
 }
 
+
+/* .card h2.ED {
+    margin-bottom: 50px;
+} */
+
+.card h1.EDT {
+    margin-bottom: 110px;
+}
+
 @media screen and (max-width: 1350px) {
     .card .A {
         font-size: 2.25rem;
@@ -64,11 +73,11 @@ img {
 }
 
 .responsiveimg11 {
-    margin-bottom: 10px;
+    margin-top: 25px;
     border-radius: 100%;
     float: left;
-    width: 60%;
-    max-width: 200px;
+    /* width: 70%; */
+    max-width: 240px;
     height: auto;
     box-shadow: 0 0 30px rgb(94, 94, 94);
     margin-right: 22px;
