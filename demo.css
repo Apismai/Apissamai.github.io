@@ -1,44 +1,50 @@
 body {
+    background: rgb(29, 28, 28);
+    font-family: "roboto", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    background: rgb(29, 28, 28);
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 836px;
-    width: 100%;
+.img-fluid {
+    position: absolute;
+    border-radius: 50%;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px #888;
 }
 
-.left {
+.col-sm-4 {
     width: 50%;
     float: left;
+    height: 47rem;
     position: relative;
-    padding: 20px;
 }
 
-.right {
+.col-sm-8 {
     width: 50%;
     float: left;
+    height: 47rem;
     position: relative;
-    padding: 20px;
+}
+
+.home {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 400px;
+    /* text-decoration: none; */
+    color: darkgrey;
 }
 
 a {
     position: absolute;
+    color: #fff;
+    text-decoration: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 10px #888;
-    font-size: 5rem;
-    text-decoration: none;
-    color: darkgrey;
-    font-family: "roboto", sans-serif;
-    list-style: none;
-    margin-right: 20px;
-    /* text-align: center; */
 }
 
 a:hover {
@@ -46,62 +52,11 @@ a:hover {
     box-shadow: 0 0 20px #888;
 }
 
-.img-me {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 0 20px #888;
-    margin-top: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* position: relative; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-}
-
-@media screen and (max-width: 950px) {
-    .container {
-        flex-direction: column;
-    }
-    a {
-        font-size: 4rem;
-        margin-left: 220px;
-        margin-top: 75px;
-    }
-    .img-me {
-        margin-left: 288px;
-    }
-}
-
-@media screen and (max-width: 611px) {
-    .container {
-        flex-direction: column;
-    }
-    a {
-        font-size: 4rem;
-        margin-left: 150px;
-        margin-top: 75px;
-    }
-    .img-me {
-        margin-left: 150px;
-    }
-}
-
-@media screen and (max-width: 361px) {
-    .container {
-        height: 660px;
-    }
-    a {
-        font-size: 3rem;
-        margin-left: 80px;
-        margin-top: 25px;
-    }
-    .img-me {
-        margin-left: 40px;
-        margin-top: 110px;
-        width: 250px;
-        height: 250px;
+@media screen and (max-width: 600px) {
+    .home,
+    .col-sm-4,
+    .col-sm-8 {
+        width: 100%;
+        padding: 0;
     }
 }
