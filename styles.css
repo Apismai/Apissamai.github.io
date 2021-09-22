@@ -37,7 +37,27 @@ h4 {
 }
 
 
-/* ส่วนควบคุมภาพกรอบวงกลม */
+/* .card h2.ED {
+    margin-bottom: 50px;
+} */
+
+.card h1.EDT {
+    margin-bottom: 110px;
+}
+
+@media screen and (max-width: 1350px) {
+    .card .A {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .card .B {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+
+/*================================================= กำหนดรูปภาพ =============================*/
 
 img {
     border-radius: 100%;
@@ -53,11 +73,11 @@ img {
 }
 
 .responsiveimg11 {
-    margin-bottom: 10px;
+    margin-top: 25px;
     border-radius: 100%;
     float: left;
-    width: 60%;
-    max-width: 200px;
+    /* width: 70%; */
+    max-width: 240px;
     height: auto;
     box-shadow: 0 0 30px rgb(94, 94, 94);
     margin-right: 22px;
@@ -74,13 +94,14 @@ img {
     box-shadow: 0 0 30px rgb(94, 94, 94);
 }
 
+@media screen and (max-width: 400px) {
+    .responsiveimg {
+        margin-left: 50px;
+    }
+}
 
-/* .row {
-    grid-template-columns: 1fr, 2fr;
-} */
 
-
-/******************* MENU BAR ด้านบน ****************************/
+/*========================================== MENU BAR ด้านบน ========================================*/
 
 
 /* พื้นหลังเมนูบาร์บน */
@@ -105,22 +126,13 @@ img {
 }
 
 
-/* รูปแบบแต่ละบล็อกเมนูขณะกดอยู่ */
+/* รูปแบบแต่ละบล็อกเมนูขณะเลือกอยู่ */
 
 .topnav a:hover {
     background-color: #38A3A5;
     color: black;
     color: #FFFFFF;
 }
-
-
-/* รูปแบบแต่ละบล็อกเมนูขณะกดอยู่ */
-
-
-/* .topnav a.active {
-    background-color: #91C788;
-    color: white;
-} */
 
 
 /* ส่วนควมคุมยุบเวลาย่อจอเล็ก */
@@ -159,10 +171,7 @@ img {
 }
 
 
-/*******************กำหนดบล็อกแสดงข้อความ****************************/
-
-
-/*******************ส่วนควบคุมเนื้อหา****************************/
+/*=================================================ส่วนควบคุมเนื้อหา===========================================*/
 
 * {
     box-sizing: border-box;
@@ -186,12 +195,11 @@ body {
 .rightcolumn {
     float: left;
     width: 20%;
-    /* background-color: #f1f1f1; */
     padding-left: 20px;
 }
 
 
-/* สร้างกล่องข้อความ รูปแบบ */
+/*-------- สร้างกล่องข้อความรูปแบบ --------*/
 
 .card {
     background-color: #A2D0C1;
@@ -209,7 +217,6 @@ body {
     margin-top: 20px;
     color: black;
     border-radius: 10px;
-    /* position: relative; */
 }
 
 
@@ -222,9 +229,9 @@ body {
 }
 
 
-/* ส่วนตวบคุมกล่องข้อความยุบขนาดตามจอ */
+/*----------- ส่วนตวบคุมกล่องข้อความยุบขนาดตามจอ---------- */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .leftcolumn,
     .rightcolumn,
     .colum {
@@ -234,7 +241,7 @@ body {
 }
 
 
-/* --------------------------skill bar----------------------------------- */
+/* ========================================skill bar======================================== */
 
 .u-center {
     display: flex;
@@ -272,6 +279,7 @@ body {
 .skill__outer-bar {
     background: rgb(133, 130, 130);
     margin-top: 1em;
+    width: 100%;
 }
 
 .skill__inner-bar {
@@ -280,11 +288,31 @@ body {
     transform-origin: 0 0;
 }
 
+
+/* ================ควบคุมจอ========== */
+
 @media screen and (max-width: 600px) {
     .skill__outer-bar,
     .skills {
         width: 80%;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 489px) {
+    .skill__outer-bar,
+    .skills {
+        width: 50%;
+        padding: 0;
+    }
+    .u-center {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skill__outer-bar {
+        width: 40%;
     }
 }
 
@@ -326,28 +354,28 @@ body {
 }
 
 
-/*------------------ควบคุมไอคอนโซเชียล------------------ */
+/*=====================================ควบคุมไอคอนโซเชียล============================================== */
 
 .social-icons .social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 41%;
     height: 4rem;
     width: 4rem;
     background-color: black;
     color: #57CC99;
     border-radius: 60%;
     font-size: 3rem;
-    /* margin-right: 1.5rem; */
     margin-top: 10px;
 }
 
 
-/* .social-icons .social-icon:last-child {
-    margin-right: 0;
-} */
+/* =======icon centter========= */
+
+.social-icon {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .social-icons .social-icon:hover {
     background-color: white;
@@ -358,6 +386,14 @@ body {
     color: #000000;
     list-style: none;
     text-align: center;
+}
+
+
+/* =======icon centter========= */
+
+ul {
+    display: flex;
+    flex-direction: column;
 }
 
 
