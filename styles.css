@@ -36,6 +36,17 @@ h4 {
     font-weight: 200;
 }
 
+@media screen and (max-width: 1350px) {
+    .card .A {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .card .B {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
 
 /* ส่วนควบคุมภาพกรอบวงกลม */
 
@@ -74,10 +85,11 @@ img {
     box-shadow: 0 0 30px rgb(94, 94, 94);
 }
 
-
-/* .row {
-    grid-template-columns: 1fr, 2fr;
-} */
+@media screen and (max-width: 400px) {
+    .responsiveimg {
+        margin-left: 50px;
+    }
+}
 
 
 /******************* MENU BAR ด้านบน ****************************/
@@ -224,7 +236,7 @@ body {
 
 /* ส่วนตวบคุมกล่องข้อความยุบขนาดตามจอ */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .leftcolumn,
     .rightcolumn,
     .colum {
@@ -272,6 +284,7 @@ body {
 .skill__outer-bar {
     background: rgb(133, 130, 130);
     margin-top: 1em;
+    width: 100%;
 }
 
 .skill__inner-bar {
@@ -285,6 +298,23 @@ body {
     .skills {
         width: 80%;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 489px) {
+    .skill__outer-bar,
+    .skills {
+        width: 50%;
+        padding: 0;
+    }
+    .u-center {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skill__outer-bar {
+        width: 40%;
     }
 }
 
