@@ -6,104 +6,6 @@
 /*ดึงฟอนต์มาใช้*/
 
 
-/* =============================================================================== */
-
-
-/*ความคุมตัวอักษรหัวข้อ*/
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: Pridi, serif;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #214151;
-}
-
-h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #000000;
-}
-
-h3 {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-h4 {
-    font-size: 22px;
-    font-weight: 200;
-}
-
-
-/* .card h2.ED {
-    margin-bottom: 50px;
-} */
-
-.card h1.EDT {
-    margin-bottom: 110px;
-}
-
-@media screen and (max-width: 1350px) {
-    .card .A {
-        font-size: 2.25rem;
-        text-align: center;
-    }
-    .card .B {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-}
-
-
-/*================================================= กำหนดรูปภาพ =============================*/
-
-img {
-    border-radius: 100%;
-    float: left;
-}
-
-.responsiveimg {
-    width: 60%;
-    max-width: 200px;
-    height: auto;
-    margin: 18px;
-    box-shadow: 0 0 30px rgb(94, 94, 94);
-}
-
-.responsiveimg11 {
-    margin-top: 25px;
-    border-radius: 100%;
-    float: left;
-    /* width: 70%; */
-    max-width: 240px;
-    height: auto;
-    box-shadow: 0 0 30px rgb(94, 94, 94);
-    margin-right: 22px;
-    margin-left: 18px;
-}
-
-.responsiveimg2 {
-    margin-bottom: 10px;
-    border-radius: 50%;
-    width: 60%;
-    max-width: 200px;
-    margin: 18px;
-    height: auto;
-    box-shadow: 0 0 30px rgb(94, 94, 94);
-}
-
-@media screen and (max-width: 400px) {
-    .responsiveimg {
-        margin-left: 50px;
-    }
-}
-
-
 /*========================================== MENU BAR ด้านบน ========================================*/
 
 
@@ -170,6 +72,119 @@ img {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+
+/* =============================================================================== */
+
+
+/*ความคุมตัวอักษรหัวข้อ*/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Pridi, serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #214151;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+
+/* .card h2.ED {
+    margin-bottom: 50px;
+} */
+
+.card h1.B {
+    margin-bottom: 110px;
+}
+
+@media screen and (max-width: 1350px) {
+    .card .E {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .card .F {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card h1.B {
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card h2.C {
+        font-size: 2.55rem;
+    }
+    .card h1.D {
+        font-size: 1.8rem;
+    }
+}
+
+
+/*================================================= กำหนดรูปภาพ =============================*/
+
+img {
+    border-radius: 100%;
+    float: left;
+}
+
+.responsiveimg {
+    width: 60%;
+    max-width: 200px;
+    height: auto;
+    margin: 18px;
+    box-shadow: 0 0 30px rgb(94, 94, 94);
+}
+
+.responsiveimg11 {
+    margin-top: 25px;
+    border-radius: 100%;
+    float: left;
+    /* width: 70%; */
+    max-width: 240px;
+    height: auto;
+    box-shadow: 0 0 30px rgb(94, 94, 94);
+    margin-right: 22px;
+    margin-left: 18px;
+}
+
+.responsiveimg2 {
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 60%;
+    max-width: 200px;
+    margin: 18px;
+    height: auto;
+    box-shadow: 0 0 30px rgb(94, 94, 94);
+}
+
+@media screen and (max-width: 400px) {
+    .responsiveimg {
+        margin-left: 50px;
     }
 }
 
@@ -400,7 +415,7 @@ ul {
 }
 
 
-/*====================================================================================== */
+/*=====================================scroll-up============================================== */
 
 html {
     scroll-behavior: smooth;
@@ -426,4 +441,24 @@ html {
 
 .scroll-top:hover {
     transform: scale(1);
+}
+
+@media screen and (max-width: 640px) {
+    .scroll-top {
+        /* width: 80%; */
+        margin-right: 20px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .scroll-top {
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .scroll-top {
+        margin-right: 220px;
+    }
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -27,7 +28,8 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
-                </div>
+            </a>
+            </div>
             </a>
 
         </nav>
@@ -40,8 +42,8 @@
             <div class="card " id=about>
                 <img src="img/1E7130AC-6FFA-468E-858A-56573BF73974.jpg " alt="Avatar " class="responsiveimg11 "><br>
 
-                <h2 class="ED "><br> About </h2>
-                <h1 class="EDT ">ข้อมูลส่วนตัว</h1>
+                <h2 class="A "><br> About </h2>
+                <h1 class="B ">ข้อมูลส่วนตัว</h1>
                 <div class="cardii ">
                     <!-- <img src="img/profile.jpg " alt="Avatar " class="responsiveimg "> -->
                     <br>
@@ -54,8 +56,8 @@
                 </div>
             </div>
             <div class="card " id=education>
-                <h2>Education</h2>
-                <h1>ประวัติการศึกษา</h1>
+                <h2 class="C">Education</h2>
+                <h1 class="D">ประวัติการศึกษา</h1>
                 <div class="cardii " id=portree>
                     <img src="img/kmutnb.png " alt="Avatar " class="responsiveimg ">
                     <br>
@@ -152,8 +154,8 @@
         <!-- คอลัมน์ขวา -->
         <div class="rightcolumn ">
             <div class="card " id=contact>
-                <h2 class="A ">Contact</h2>
-                <h1 class="B ">ติดต่อเรา</h1>
+                <h2 class="E ">Contact</h2>
+                <h1 class="F ">ติดต่อเรา</h1>
                 <div class="social-icons ">
                     <ul class="iconii " class="responsiveimg ">
 
@@ -199,11 +201,11 @@
     <!-- ส่วนควมคุมจาวา ยุบเมนู -->
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav ");
-            if (x.className === "topnav ") {
-                x.className += " responsive ";
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
             } else {
-                x.className = "topnav ";
+                x.className = "topnav";
             }
         }
         const scrollButton = document.querySelector(".scroll-top");

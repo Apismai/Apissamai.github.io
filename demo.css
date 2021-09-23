@@ -1,3 +1,5 @@
+    /* ===================== */
+
 body {
     margin: 0;
     padding: 0;
@@ -116,4 +118,112 @@ a:hover {
         width: 250px;
         height: 250px;
     }
-}
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background: rgb(255, 255, 255);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 836px;
+        width: 100%;
+    }
+    .left {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding: 20px;
+    }
+    .right {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding: 20px;
+    }
+    a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px #F8DC81;
+        font-size: 5rem;
+        text-decoration: none;
+        color: darkgrey;
+        font-family: "roboto", sans-serif;
+        list-style: none;
+        margin-right: 20px;
+        /* text-align: center; */
+    }
+    a:hover {
+        color: darkgrey;
+        box-shadow: 0 0 20px #F8DC81;
+    }
+    .img-me {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 20px #888;
+        margin-top: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    @media screen and (max-width: 950px) {
+        .container {
+            flex-direction: column;
+        }
+        a {
+            font-size: 4rem;
+            margin-left: 220px;
+            margin-top: 75px;
+        }
+        .img-me {
+            margin-left: 288px;
+            margin-top: 50px;
+        }
+    }
+    @media screen and (max-width: 770px) {
+        .container {
+            height: 660px;
+        }
+        a {
+            font-size: 4rem;
+            margin-left: 170px;
+            margin-top: 75px;
+        }
+        .img-me {
+            margin-left: 220px;
+            margin-top: 220px;
+        }
+    }
+    @media screen and (max-width: 611px) {
+        .container {
+            height: 660px;
+        }
+        a {
+            font-size: 4rem;
+            margin-left: 150px;
+            margin-top: 75px;
+        }
+        .img-me {
+            margin-left: 150px;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        .container {
+            height: 660px;
+        }
+        a {
+            font-size: 3rem;
+            margin-left: 80px;
+            margin-top: 25px;
+        }
+        .img-me {
+            margin-left: 40px;
+            margin-top: 110px;
+            width: 250px;
+            height: 250px;
+        }
+    }
