@@ -311,26 +311,22 @@ body {
 
 @media screen and (max-width: 600px) {
     .skill__outer-bar,
-    .skills {
+    .skills,
+    .skill {
         width: 80%;
         padding: 0;
     }
 }
 
-@media screen and (max-width: 489px) {
-    .skill__outer-bar,
-    .skills {
-        width: 50%;
-        padding: 0;
+@media screen and (max-width: 480px) {
+    section.skills {
+        width: 100%;
+    }
+    .skill__type {
+        width: 100%;
     }
     .u-center {
-        margin-left: -40px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .skill__outer-bar {
-        width: 40%;
+        margin-left: 25%;
     }
 }
 
@@ -441,24 +437,4 @@ html {
 
 .scroll-top:hover {
     transform: scale(1);
-}
-
-@media screen and (max-width: 640px) {
-    .scroll-top {
-        /* width: 80%; */
-        margin-right: 20px;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .scroll-top {
-        margin-right: 200px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .scroll-top {
-        margin-right: 220px;
-    }
 }
